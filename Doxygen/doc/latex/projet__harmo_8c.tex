@@ -1,0 +1,394 @@
+\doxysection{Référence du fichier C\+:/\+Users/donal/\+Desktop/projet\+\_\+sudoku\+\_\+c/projet\+\_\+harmo.c}
+\label{projet__harmo_8c}\index{C:/Users/donal/Desktop/projet\_sudoku\_c/projet\_harmo.c@{C:/Users/donal/Desktop/projet\_sudoku\_c/projet\_harmo.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Graphe des dépendances par inclusion de projet\+\_\+harmo.\+c\+:
+% FIG 0
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ grille}
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \textbf{ grille} \textbf{ grille}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ indice\+Position} ()
+\item 
+int \textbf{ existe\+Pos} (int i, int j)
+\item 
+int \textbf{ grille\+Pleine} ()
+\item 
+int \textbf{ menu} ()
+\item 
+void \textbf{ effacer} ()
+\item 
+void \textbf{ ajout\+Valeur} ()
+\item 
+void \textbf{ ajout\+Grille} (\textbf{ grille} $\ast$t)
+\item 
+void \textbf{ afficher} ()
+\item 
+int \textbf{ equals\+Grille} (\textbf{ grille} grille2, \textbf{ grille} grille1)
+\item 
+void \textbf{ generateur} (\textbf{ grille} $\ast$t, int n)
+\item 
+void \textbf{ affichage} (int \textbf{ grille}[9][9])
+\item 
+int \textbf{ resolution} (int ligne, int colonne, int \textbf{ grille}[9][9])
+\item 
+void \textbf{ permutation} ()
+\item 
+void \textbf{ differentes\+Grilles} ()
+\item 
+int \textbf{ absent\+Sur\+Ligne} (int valeur, int ligne, int colonne, int \textbf{ grille}[9][9])
+\item 
+int \textbf{ absent\+Sur\+Colonne} (int valeur, int ligne, int colonne, int \textbf{ grille}[9][9])
+\item 
+int \textbf{ absent\+Sur\+Bloc} (int valeur, int ligne, int colonne, int \textbf{ grille}[9][9])
+\item 
+int \textbf{ jeu} ()
+\item 
+int \textbf{ main} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ taille} =0
+\item 
+\textbf{ grille} \textbf{ tabgrille} [1000]
+\item 
+\textbf{ grille} \textbf{ test}
+\item 
+int \textbf{ nb\+\_\+iteration}
+\item 
+int \textbf{ position} [45][2]
+\item 
+int \textbf{ a}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\label{projet__harmo_8c_a41e85e68b2c15c1497bd4e2761133221}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!grille@{grille}}
+\index{grille@{grille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{grille}
+{\footnotesize\ttfamily typedef struct \textbf{ grille} \textbf{ grille}}
+
+
+
+Définition à la ligne 12 du fichier projet\+\_\+harmo.\+c.
+
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\label{projet__harmo_8c_ada7cf61e04d1f1634f59dd61b619dfc5}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!absentSurBloc@{absentSurBloc}}
+\index{absentSurBloc@{absentSurBloc}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{absentSurBloc()}
+{\footnotesize\ttfamily int absent\+Sur\+Bloc (\begin{DoxyParamCaption}\item[{int}]{valeur,  }\item[{int}]{ligne,  }\item[{int}]{colonne,  }\item[{int}]{grille[9][9] }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 355 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 1
+\mbox{\label{projet__harmo_8c_aab702ed3d9237a305ef0df74d2f6672a}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!absentSurColonne@{absentSurColonne}}
+\index{absentSurColonne@{absentSurColonne}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{absentSurColonne()}
+{\footnotesize\ttfamily int absent\+Sur\+Colonne (\begin{DoxyParamCaption}\item[{int}]{valeur,  }\item[{int}]{ligne,  }\item[{int}]{colonne,  }\item[{int}]{grille[9][9] }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 339 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 2
+\mbox{\label{projet__harmo_8c_a5c7a02e958d7f35647407a65993f8771}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!absentSurLigne@{absentSurLigne}}
+\index{absentSurLigne@{absentSurLigne}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{absentSurLigne()}
+{\footnotesize\ttfamily int absent\+Sur\+Ligne (\begin{DoxyParamCaption}\item[{int}]{valeur,  }\item[{int}]{ligne,  }\item[{int}]{colonne,  }\item[{int}]{grille[9][9] }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 324 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 3
+\mbox{\label{projet__harmo_8c_acc83ff77e4aa7a7f7123ba6fe7c0382b}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!affichage@{affichage}}
+\index{affichage@{affichage}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{affichage()}
+{\footnotesize\ttfamily void affichage (\begin{DoxyParamCaption}\item[{int}]{grille[9][9] }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 201 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 4
+\mbox{\label{projet__harmo_8c_aa8d78f2252da16d4e77d2742f8544752}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!afficher@{afficher}}
+\index{afficher@{afficher}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{afficher()}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 144 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 5
+Voici le graphe des appelants de cette fonction \+:
+% FIG 6
+\mbox{\label{projet__harmo_8c_abf94690745fedde2e88286d365692177}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!ajoutGrille@{ajoutGrille}}
+\index{ajoutGrille@{ajoutGrille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{ajoutGrille()}
+{\footnotesize\ttfamily void ajout\+Grille (\begin{DoxyParamCaption}\item[{\textbf{ grille} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 137 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 7
+\mbox{\label{projet__harmo_8c_a4254697094df913b0576e158c4e7b50c}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!ajoutValeur@{ajoutValeur}}
+\index{ajoutValeur@{ajoutValeur}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{ajoutValeur()}
+{\footnotesize\ttfamily void ajout\+Valeur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 120 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 8
+Voici le graphe des appelants de cette fonction \+:
+% FIG 9
+\mbox{\label{projet__harmo_8c_ad40db0efc7f7708c0f10067eb950d845}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!differentesGrilles@{differentesGrilles}}
+\index{differentesGrilles@{differentesGrilles}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{differentesGrilles()}
+{\footnotesize\ttfamily void differentes\+Grilles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 290 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 10
+Voici le graphe des appelants de cette fonction \+:
+% FIG 11
+\mbox{\label{projet__harmo_8c_a1dfd2104addc36a33b6ba057820c2b73}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!effacer@{effacer}}
+\index{effacer@{effacer}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{effacer()}
+{\footnotesize\ttfamily void effacer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 105 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 12
+Voici le graphe des appelants de cette fonction \+:
+% FIG 13
+\mbox{\label{projet__harmo_8c_a4e1462fca00d5982c05899a976f014e2}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!equalsGrille@{equalsGrille}}
+\index{equalsGrille@{equalsGrille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{equalsGrille()}
+{\footnotesize\ttfamily int equals\+Grille (\begin{DoxyParamCaption}\item[{\textbf{ grille}}]{grille2,  }\item[{\textbf{ grille}}]{grille1 }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 172 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 14
+\mbox{\label{projet__harmo_8c_a80d61b28855f25c540e9e3af96adf028}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!existePos@{existePos}}
+\index{existePos@{existePos}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{existePos()}
+{\footnotesize\ttfamily int existe\+Pos (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 47 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 15
+\mbox{\label{projet__harmo_8c_a63b6c38f57bc4aad887571110cfc93bf}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!generateur@{generateur}}
+\index{generateur@{generateur}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{generateur()}
+{\footnotesize\ttfamily void generateur (\begin{DoxyParamCaption}\item[{\textbf{ grille} $\ast$}]{t,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 184 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 16
+Voici le graphe des appelants de cette fonction \+:
+% FIG 17
+\mbox{\label{projet__harmo_8c_aad5a36d3140c2998f3028e46c2a14156}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!grillePleine@{grillePleine}}
+\index{grillePleine@{grillePleine}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{grillePleine()}
+{\footnotesize\ttfamily int grille\+Pleine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 57 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 18
+\mbox{\label{projet__harmo_8c_a9db1a6993eb9095ab8d3b7e7e3a10f23}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!indicePosition@{indicePosition}}
+\index{indicePosition@{indicePosition}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{indicePosition()}
+{\footnotesize\ttfamily int indice\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 30 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 19
+\mbox{\label{projet__harmo_8c_afdf33ef6507a8d51e0ab5210ce727466}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!jeu@{jeu}}
+\index{jeu@{jeu}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{jeu()}
+{\footnotesize\ttfamily int jeu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 385 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 20
+Voici le graphe des appelants de cette fonction \+:
+% FIG 21
+\mbox{\label{projet__harmo_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!main@{main}}
+\index{main@{main}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 431 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 22
+\mbox{\label{projet__harmo_8c_ae83fcdbeb2b6757fc741ae953b633ee1}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!menu@{menu}}
+\index{menu@{menu}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{menu()}
+{\footnotesize\ttfamily int menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 70 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 23
+\mbox{\label{projet__harmo_8c_a90247cfc361933dfe42acae581542529}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!permutation@{permutation}}
+\index{permutation@{permutation}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{permutation()}
+{\footnotesize\ttfamily void permutation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 274 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 24
+\mbox{\label{projet__harmo_8c_a056a9e886e4c530085a2ac1b350b70de}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!resolution@{resolution}}
+\index{resolution@{resolution}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{resolution()}
+{\footnotesize\ttfamily int resolution (\begin{DoxyParamCaption}\item[{int}]{ligne,  }\item[{int}]{colonne,  }\item[{int}]{grille[9][9] }\end{DoxyParamCaption})}
+
+
+
+Définition à la ligne 219 du fichier projet\+\_\+harmo.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 25
+Voici le graphe des appelants de cette fonction \+:
+% FIG 26
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\label{projet__harmo_8c_aa4c2a5552e9bc49b1816ff532f558c74}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!a@{a}}
+\index{a@{a}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{a}
+{\footnotesize\ttfamily int a}
+
+
+
+Définition à la ligne 24 du fichier projet\+\_\+harmo.\+c.
+
+\mbox{\label{projet__harmo_8c_a4919259698d04c833e4792fcad322862}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!nb\_iteration@{nb\_iteration}}
+\index{nb\_iteration@{nb\_iteration}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{nb\_iteration}
+{\footnotesize\ttfamily int nb\+\_\+iteration}
+
+
+
+Définition à la ligne 20 du fichier projet\+\_\+harmo.\+c.
+
+\mbox{\label{projet__harmo_8c_ae20d8c44a51ff893f9f451c1dd184018}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!position@{position}}
+\index{position@{position}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{position}
+{\footnotesize\ttfamily int position[45][2]}
+
+
+
+Définition à la ligne 22 du fichier projet\+\_\+harmo.\+c.
+
+\mbox{\label{projet__harmo_8c_a6f5e9a298c64c7708c92606a9342d89e}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!tabgrille@{tabgrille}}
+\index{tabgrille@{tabgrille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{tabgrille}
+{\footnotesize\ttfamily \textbf{ grille} tabgrille[1000]}
+
+
+
+Définition à la ligne 16 du fichier projet\+\_\+harmo.\+c.
+
+\mbox{\label{projet__harmo_8c_a29bf3fc0ffe4e72e45f0c84ab4f8cd1e}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!taille@{taille}}
+\index{taille@{taille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{taille}
+{\footnotesize\ttfamily int taille =0}
+
+
+
+Définition à la ligne 14 du fichier projet\+\_\+harmo.\+c.
+
+\mbox{\label{projet__harmo_8c_a791c5471174d9e93e008febe1a929188}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!test@{test}}
+\index{test@{test}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{test}
+{\footnotesize\ttfamily \textbf{ grille} test}
+
+
+
+Définition à la ligne 18 du fichier projet\+\_\+harmo.\+c.
+

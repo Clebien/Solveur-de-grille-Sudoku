@@ -1,0 +1,238 @@
+\hypertarget{projet__harmo_8c}{}\doxysection{C\+:/\+Users/donal/\+Desktop/projet\+\_\+sudoku\+\_\+c/projet\+\_\+harmo.c File Reference}
+\label{projet__harmo_8c}\index{C:/Users/donal/Desktop/projet\_sudoku\_c/projet\_harmo.c@{C:/Users/donal/Desktop/projet\_sudoku\_c/projet\_harmo.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for projet\+\_\+harmo.\+c\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgrille}{grille}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structgrille}{grille}} \mbox{\hyperlink{projet__harmo_8c_a41e85e68b2c15c1497bd4e2761133221}{grille}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_a9db1a6993eb9095ab8d3b7e7e3a10f23}{indice\+Position}} ()
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_a80d61b28855f25c540e9e3af96adf028}{existe\+Pos}} (int i, int j)
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_aad5a36d3140c2998f3028e46c2a14156}{grille\+Pleine}} ()
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_ae83fcdbeb2b6757fc741ae953b633ee1}{menu}} ()
+\item 
+void \mbox{\hyperlink{projet__harmo_8c_a1dfd2104addc36a33b6ba057820c2b73}{effacer}} ()
+\item 
+void \mbox{\hyperlink{projet__harmo_8c_a4254697094df913b0576e158c4e7b50c}{ajout\+Valeur}} ()
+\item 
+void \mbox{\hyperlink{projet__harmo_8c_abf94690745fedde2e88286d365692177}{ajout\+Grille}} (\mbox{\hyperlink{structgrille}{grille}} $\ast$t)
+\item 
+void \mbox{\hyperlink{projet__harmo_8c_aa8d78f2252da16d4e77d2742f8544752}{afficher}} ()
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_a4e1462fca00d5982c05899a976f014e2}{equals\+Grille}} (\mbox{\hyperlink{structgrille}{grille}} grille2, \mbox{\hyperlink{structgrille}{grille}} grille1)
+\item 
+void \mbox{\hyperlink{projet__harmo_8c_a63b6c38f57bc4aad887571110cfc93bf}{generateur}} (\mbox{\hyperlink{structgrille}{grille}} $\ast$t, int n)
+\item 
+void \mbox{\hyperlink{projet__harmo_8c_acc83ff77e4aa7a7f7123ba6fe7c0382b}{affichage}} (int \mbox{\hyperlink{structgrille}{grille}}\mbox{[}9\mbox{]}\mbox{[}9\mbox{]})
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_a056a9e886e4c530085a2ac1b350b70de}{resolution}} (int ligne, int colonne, int \mbox{\hyperlink{structgrille}{grille}}\mbox{[}9\mbox{]}\mbox{[}9\mbox{]})
+\item 
+void \mbox{\hyperlink{projet__harmo_8c_a90247cfc361933dfe42acae581542529}{permutation}} ()
+\item 
+void \mbox{\hyperlink{projet__harmo_8c_ad40db0efc7f7708c0f10067eb950d845}{differentes\+Grilles}} ()
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_a5c7a02e958d7f35647407a65993f8771}{absent\+Sur\+Ligne}} (int valeur, int ligne, int colonne, int \mbox{\hyperlink{structgrille}{grille}}\mbox{[}9\mbox{]}\mbox{[}9\mbox{]})
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_aab702ed3d9237a305ef0df74d2f6672a}{absent\+Sur\+Colonne}} (int valeur, int ligne, int colonne, int \mbox{\hyperlink{structgrille}{grille}}\mbox{[}9\mbox{]}\mbox{[}9\mbox{]})
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_ada7cf61e04d1f1634f59dd61b619dfc5}{absent\+Sur\+Bloc}} (int valeur, int ligne, int colonne, int \mbox{\hyperlink{structgrille}{grille}}\mbox{[}9\mbox{]}\mbox{[}9\mbox{]})
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_afdf33ef6507a8d51e0ab5210ce727466}{jeu}} ()
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_a29bf3fc0ffe4e72e45f0c84ab4f8cd1e}{taille}} =0
+\item 
+\mbox{\hyperlink{structgrille}{grille}} \mbox{\hyperlink{projet__harmo_8c_a6f5e9a298c64c7708c92606a9342d89e}{tabgrille}} \mbox{[}1000\mbox{]}
+\item 
+\mbox{\hyperlink{structgrille}{grille}} \mbox{\hyperlink{projet__harmo_8c_a791c5471174d9e93e008febe1a929188}{test}}
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_a4919259698d04c833e4792fcad322862}{nb\+\_\+iteration}}
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_ae20d8c44a51ff893f9f451c1dd184018}{position}} \mbox{[}45\mbox{]}\mbox{[}2\mbox{]}
+\item 
+int \mbox{\hyperlink{projet__harmo_8c_aa4c2a5552e9bc49b1816ff532f558c74}{a}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{projet__harmo_8c_a41e85e68b2c15c1497bd4e2761133221}\label{projet__harmo_8c_a41e85e68b2c15c1497bd4e2761133221}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!grille@{grille}}
+\index{grille@{grille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{grille}{grille}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structgrille}{grille}} \mbox{\hyperlink{structgrille}{grille}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{projet__harmo_8c_ada7cf61e04d1f1634f59dd61b619dfc5}\label{projet__harmo_8c_ada7cf61e04d1f1634f59dd61b619dfc5}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!absentSurBloc@{absentSurBloc}}
+\index{absentSurBloc@{absentSurBloc}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{absentSurBloc()}{absentSurBloc()}}
+{\footnotesize\ttfamily int absent\+Sur\+Bloc (\begin{DoxyParamCaption}\item[{int}]{valeur,  }\item[{int}]{ligne,  }\item[{int}]{colonne,  }\item[{int}]{grille\mbox{[}9\mbox{]}\mbox{[}9\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_aab702ed3d9237a305ef0df74d2f6672a}\label{projet__harmo_8c_aab702ed3d9237a305ef0df74d2f6672a}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!absentSurColonne@{absentSurColonne}}
+\index{absentSurColonne@{absentSurColonne}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{absentSurColonne()}{absentSurColonne()}}
+{\footnotesize\ttfamily int absent\+Sur\+Colonne (\begin{DoxyParamCaption}\item[{int}]{valeur,  }\item[{int}]{ligne,  }\item[{int}]{colonne,  }\item[{int}]{grille\mbox{[}9\mbox{]}\mbox{[}9\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_a5c7a02e958d7f35647407a65993f8771}\label{projet__harmo_8c_a5c7a02e958d7f35647407a65993f8771}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!absentSurLigne@{absentSurLigne}}
+\index{absentSurLigne@{absentSurLigne}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{absentSurLigne()}{absentSurLigne()}}
+{\footnotesize\ttfamily int absent\+Sur\+Ligne (\begin{DoxyParamCaption}\item[{int}]{valeur,  }\item[{int}]{ligne,  }\item[{int}]{colonne,  }\item[{int}]{grille\mbox{[}9\mbox{]}\mbox{[}9\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_acc83ff77e4aa7a7f7123ba6fe7c0382b}\label{projet__harmo_8c_acc83ff77e4aa7a7f7123ba6fe7c0382b}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!affichage@{affichage}}
+\index{affichage@{affichage}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{affichage()}{affichage()}}
+{\footnotesize\ttfamily void affichage (\begin{DoxyParamCaption}\item[{int}]{grille\mbox{[}9\mbox{]}\mbox{[}9\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_aa8d78f2252da16d4e77d2742f8544752}\label{projet__harmo_8c_aa8d78f2252da16d4e77d2742f8544752}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!afficher@{afficher}}
+\index{afficher@{afficher}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void afficher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_abf94690745fedde2e88286d365692177}\label{projet__harmo_8c_abf94690745fedde2e88286d365692177}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!ajoutGrille@{ajoutGrille}}
+\index{ajoutGrille@{ajoutGrille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{ajoutGrille()}{ajoutGrille()}}
+{\footnotesize\ttfamily void ajout\+Grille (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrille}{grille}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_a4254697094df913b0576e158c4e7b50c}\label{projet__harmo_8c_a4254697094df913b0576e158c4e7b50c}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!ajoutValeur@{ajoutValeur}}
+\index{ajoutValeur@{ajoutValeur}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{ajoutValeur()}{ajoutValeur()}}
+{\footnotesize\ttfamily void ajout\+Valeur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_ad40db0efc7f7708c0f10067eb950d845}\label{projet__harmo_8c_ad40db0efc7f7708c0f10067eb950d845}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!differentesGrilles@{differentesGrilles}}
+\index{differentesGrilles@{differentesGrilles}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{differentesGrilles()}{differentesGrilles()}}
+{\footnotesize\ttfamily void differentes\+Grilles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_a1dfd2104addc36a33b6ba057820c2b73}\label{projet__harmo_8c_a1dfd2104addc36a33b6ba057820c2b73}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!effacer@{effacer}}
+\index{effacer@{effacer}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{effacer()}{effacer()}}
+{\footnotesize\ttfamily void effacer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_a4e1462fca00d5982c05899a976f014e2}\label{projet__harmo_8c_a4e1462fca00d5982c05899a976f014e2}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!equalsGrille@{equalsGrille}}
+\index{equalsGrille@{equalsGrille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{equalsGrille()}{equalsGrille()}}
+{\footnotesize\ttfamily int equals\+Grille (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrille}{grille}}}]{grille2,  }\item[{\mbox{\hyperlink{structgrille}{grille}}}]{grille1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_a80d61b28855f25c540e9e3af96adf028}\label{projet__harmo_8c_a80d61b28855f25c540e9e3af96adf028}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!existePos@{existePos}}
+\index{existePos@{existePos}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{existePos()}{existePos()}}
+{\footnotesize\ttfamily int existe\+Pos (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_a63b6c38f57bc4aad887571110cfc93bf}\label{projet__harmo_8c_a63b6c38f57bc4aad887571110cfc93bf}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!generateur@{generateur}}
+\index{generateur@{generateur}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{generateur()}{generateur()}}
+{\footnotesize\ttfamily void generateur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgrille}{grille}} $\ast$}]{t,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_aad5a36d3140c2998f3028e46c2a14156}\label{projet__harmo_8c_aad5a36d3140c2998f3028e46c2a14156}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!grillePleine@{grillePleine}}
+\index{grillePleine@{grillePleine}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{grillePleine()}{grillePleine()}}
+{\footnotesize\ttfamily int grille\+Pleine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_a9db1a6993eb9095ab8d3b7e7e3a10f23}\label{projet__harmo_8c_a9db1a6993eb9095ab8d3b7e7e3a10f23}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!indicePosition@{indicePosition}}
+\index{indicePosition@{indicePosition}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{indicePosition()}{indicePosition()}}
+{\footnotesize\ttfamily int indice\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_afdf33ef6507a8d51e0ab5210ce727466}\label{projet__harmo_8c_afdf33ef6507a8d51e0ab5210ce727466}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!jeu@{jeu}}
+\index{jeu@{jeu}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{jeu()}{jeu()}}
+{\footnotesize\ttfamily int jeu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{projet__harmo_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!main@{main}}
+\index{main@{main}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_ae83fcdbeb2b6757fc741ae953b633ee1}\label{projet__harmo_8c_ae83fcdbeb2b6757fc741ae953b633ee1}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!menu@{menu}}
+\index{menu@{menu}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily int menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_a90247cfc361933dfe42acae581542529}\label{projet__harmo_8c_a90247cfc361933dfe42acae581542529}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!permutation@{permutation}}
+\index{permutation@{permutation}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{permutation()}{permutation()}}
+{\footnotesize\ttfamily void permutation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{projet__harmo_8c_a056a9e886e4c530085a2ac1b350b70de}\label{projet__harmo_8c_a056a9e886e4c530085a2ac1b350b70de}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!resolution@{resolution}}
+\index{resolution@{resolution}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{resolution()}{resolution()}}
+{\footnotesize\ttfamily int resolution (\begin{DoxyParamCaption}\item[{int}]{ligne,  }\item[{int}]{colonne,  }\item[{int}]{grille\mbox{[}9\mbox{]}\mbox{[}9\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{projet__harmo_8c_aa4c2a5552e9bc49b1816ff532f558c74}\label{projet__harmo_8c_aa4c2a5552e9bc49b1816ff532f558c74}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!a@{a}}
+\index{a@{a}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily int a}
+
+\mbox{\Hypertarget{projet__harmo_8c_a4919259698d04c833e4792fcad322862}\label{projet__harmo_8c_a4919259698d04c833e4792fcad322862}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!nb\_iteration@{nb\_iteration}}
+\index{nb\_iteration@{nb\_iteration}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{nb\_iteration}{nb\_iteration}}
+{\footnotesize\ttfamily int nb\+\_\+iteration}
+
+\mbox{\Hypertarget{projet__harmo_8c_ae20d8c44a51ff893f9f451c1dd184018}\label{projet__harmo_8c_ae20d8c44a51ff893f9f451c1dd184018}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!position@{position}}
+\index{position@{position}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily int position\mbox{[}45\mbox{]}\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{projet__harmo_8c_a6f5e9a298c64c7708c92606a9342d89e}\label{projet__harmo_8c_a6f5e9a298c64c7708c92606a9342d89e}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!tabgrille@{tabgrille}}
+\index{tabgrille@{tabgrille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{tabgrille}{tabgrille}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgrille}{grille}} tabgrille\mbox{[}1000\mbox{]}}
+
+\mbox{\Hypertarget{projet__harmo_8c_a29bf3fc0ffe4e72e45f0c84ab4f8cd1e}\label{projet__harmo_8c_a29bf3fc0ffe4e72e45f0c84ab4f8cd1e}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!taille@{taille}}
+\index{taille@{taille}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{taille}{taille}}
+{\footnotesize\ttfamily int taille =0}
+
+\mbox{\Hypertarget{projet__harmo_8c_a791c5471174d9e93e008febe1a929188}\label{projet__harmo_8c_a791c5471174d9e93e008febe1a929188}} 
+\index{projet\_harmo.c@{projet\_harmo.c}!test@{test}}
+\index{test@{test}!projet\_harmo.c@{projet\_harmo.c}}
+\doxysubsubsection{\texorpdfstring{test}{test}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgrille}{grille}} test}
+
